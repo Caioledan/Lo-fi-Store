@@ -3,6 +3,32 @@
     padding: 0;
 }
 
+#botaoDesmutar {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    bottom: 20px; /* distância da parte inferior da tela */
+    right: 20px;  /* distância da lateral direita da tela */
+    padding: 10px 20px;
+    background-color: #DA0037;
+    border-radius: 50%;
+    cursor: pointer;
+    border-style: none;
+}
+
+#botaoDesmutar img{
+    height: 60px;
+    margin: 0 auto;
+}
+
+#botaoDesmutar:hover {
+    background-color: #FF165D;
+    transition: 0.3s all;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+}
+
 header{
     display: flex;
     align-items: center;
@@ -12,6 +38,9 @@ header{
 
 body{
     font-family: kanit;
+    width: 100%;
+    height: 2832px;
+    overflow-x: hidden;
 }
 
 #Logo img{
@@ -156,7 +185,8 @@ header ul{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 120px;
+    gap: 40px;
+    margin: 0;
 }
 
 .Card{
@@ -185,12 +215,22 @@ header ul{
     font-weight: bold;
 }
 
+.Titulo-prod{
+    color: black;
+}
+
+.Card a{
+    text-decoration: none;
+}
+
 .Preco{
     color: #295F98;
 }
 
+
 .Seta{
     width: 70px;
+    cursor: pointer;
 }
 
 .Seta:hover{
@@ -205,11 +245,11 @@ header ul{
 }
 
 #Seta-dir{
-    margin-right: 5%;
+    margin-right: 45px;
 }
 
 #Seta-esq{
-    margin-left: 5%;
+    margin-left: 45px;
 }
 
 footer{

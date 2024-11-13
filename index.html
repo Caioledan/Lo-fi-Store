@@ -8,9 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/Lo-fi girl icon.ico" type="image/x-icon">
-    <title>Lo-fi Store</title>
+    <title>Lofi Store</title>
 </head>
 <body>
+
+    <audio id="meuAudio" autoplay loop muted>
+        <source src="assets/audios/flâneur x marsquake - Tranquilo.mp3" type="audio/mpeg">
+        <source src="assets/audios/flâneur-x-marsquake-Tranquilo.ogg" type="audio/ogg">
+        <source src="assets/audios/flâneur-x-marsquake-Tranquilo.wav" type="audio/wav">
+    </audio>
+
+    <button id="botaoDesmutar"><img src="assets/images/sem-som.png" alt="" id="iconeSom"></button>
+    
+
     <header>
         <div id="Logo">
             <a href="#"><img src="assets/images/LG_logo_logo_text_black_300x.avif" alt=""></a>
@@ -25,16 +35,16 @@
     </header>
 
     <main>
-        <div id="Container-1">
+        <section id="Container-1">
             <img src="assets/images/Lo-fi Girl Studying.png" alt="">
             <div>
                 <p id="Comentario">“Venha fazer parte da comunidade Lo-fi Girl e se aconchegue com nossos produtos”</p>
                 <p id="Autor">- Um recado de ChilledCow</p>
             </div>
 
-        </div>
+        </section>
 
-        <div id="Container-2">
+        <section id="Container-2">
             <div id="Quem-Somos">
                 <h1 id="Titulo-cont2">Quem Somos?</h1>
                 <p id="P-cont2">Lofi Girl (anteriormente ChilledCow até 2021), é um canal francês, da plataforma Youtube, estabelecido desde 2017.  O canal fornece transmissões ao vivo 24 horas por dia, 7 dias por semana, trazendo desde músicas do gênero hip-hop até mesmo synthwave e música clássica. Desde sua criação, recebe um grande apoio de sua comunidadede crescente e popular mundialmente. Sua principal característica são suas personagens em estilo anime que interagem, em uma animação em loop, na transmissão ao vivo a todo momento.</p>
@@ -42,9 +52,9 @@
             <div id="Imagem-Cont2">
                 <img src="assets/images/Lo-fi Girl and cat.png" alt="">
             </div>
-        </div>
+        </section>
 
-        <div id="Container-3">
+        <section id="Container-3">
             <div>
                 <h1>Categorias</h1>
             </div>
@@ -66,20 +76,20 @@
 
             </div>
 
-        </div>
+        </section>
 
-        <div id="Container-4">
+        <section id="Container-4">
             <div id="Titulo-cont4">
                 <h1>Mais Vendidos</h1>
             </div>
 
 
             <div id="Produtos">
-                <button id="Seta-esq"><img src="assets/images/seta-esquerda.png" alt=""  class="Seta"></button >
+                <button id="Ant-Bt"><img src="assets/images/seta-esquerda.png" alt=""  id="Seta-esq" class="Seta"></button >
                 <div class="Card">
                     <a href="#">
                         <img src="assets/images/Lo-fi Hoods.png" alt="">
-                        <p>Fantasias Lo-fi Girl and Boy</p>
+                        <p class="Titulo-prod">Fantasias Lo-fi Girl and Boy</p>
                         <p class="Preco">R$ 239,99</p>
                     </a>
                 </div>
@@ -87,7 +97,7 @@
                 <div class="Card">
                     <a href="#">
                         <img src="assets/images/Lo-fi Plushie.jpg" alt="">
-                        <p>Pelúcia Lo-fi Girl</p>
+                        <p class="Titulo-prod">Pelúcia Lo-fi Girl</p>
                         <p class="Preco">R$ 149,99</p>
                     </a>
                 </div>
@@ -95,14 +105,38 @@
                 <div class="Card">
                     <a href="#">
                         <img src="assets/images/lofiboybackpack.png" alt="">
-                        <p>Mochila Lo-fi Boy</p>
+                        <p class="Titulo-prod">Mochila Lo-fi Boy</p>
                         <p class="Preco">R$ 199,99</p>
                     </a>
                 </div>
-                <button id="Seta-dir"><img src="assets/images/seta-direita.png" alt=""  class="Seta"></button >
+
+                <!-- <div class="Card">
+                    <a href="#">
+                        <img src="assets/images/lo-fi wallpaper.png" alt="">
+                        <p class="Titulo-prod">Wallpaper Lo-fi Girl</p>
+                        <p class="Preco">R$ 99,99</p>
+                    </a>
+                </div>
+
+                <div class="Card">
+                    <a href="#">
+                        <img src="assets/images/Lo-fi Cards.jpg" alt="">
+                        <p class="Titulo-prod">Baralho Lo-fi</p>
+                        <p class="Preco">R$ 69,99</p>
+                    </a>
+                </div>
+
+                <div class="Card">
+                    <a href="#">
+                        <img src="assets/images/Lo-fi Mug.png" alt="">
+                        <p class="Titulo-prod">Caneca Lo-fi Girl</p>
+                        <p class="Preco">R$ 49,99</p>
+                    </a>
+                </div> -->
+                <button id="Prox-Bt"><img src="assets/images/seta-direita.png" alt=""  id="Seta-dir" class="Seta"></button >
             </div>
 
-        </div>
+        </section>
 
         <footer>
                 <div>
@@ -117,5 +151,7 @@
             </ul>
         </footer>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
