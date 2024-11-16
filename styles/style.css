@@ -82,7 +82,7 @@ header ul{
 }
 
 #Container-1 img{
-    height: 60vh;
+    height: 500px;
     border-radius: 50%;
     margin-left: 5rem;
     margin-right: 10rem;
@@ -104,6 +104,46 @@ header ul{
 }
 
 #Container-2{
+    background-color: #D2E0FB;
+    text-align: center;
+    height: 698px;
+}
+
+#Bloco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+#Bloco img{
+    height: 470px;
+    border: solid 10px black;
+    border-radius: 10%;
+}
+
+.Motivations-card{
+    height: 470px;
+    width: 437px;
+    margin: 0 3%;
+}
+
+#Container-2 p{
+    font-size: 26px;
+}
+
+#Container-2 h1{
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+#Container-2 h2{
+    font-size: 36px;
+}
+
+#Container-3{
     background-color: #FAE3D9;
     display: flex;
     align-items: center;
@@ -112,7 +152,7 @@ header ul{
     text-align: center;
 }
 
-#Container-2 img{
+#Container-3 img{
     height: 698px;
     margin-top: 5px;
 }
@@ -126,19 +166,19 @@ header ul{
     margin: 10px 15%;
 }
 
-#Container-3{
+#Container-4{
     background-color: #BBDED6;
     height: 698px;
     text-align: center;
 }
 
-#Container-3 h1{
+#Container-4 h1{
     padding-top: 3%;
     font-size: 46px;
     font-weight: 500;
 }
 
-#Container-3 p{
+#Container-4 p{
     font-size: 32px;
     font-weight: 400;
     margin-top: 15px;
@@ -167,13 +207,13 @@ header ul{
     gap: 10%;
 }
 
-#Container-4{
+#Container-5{
     height: 698px;
     background-color: #61C0BF;
     text-align: center;
 }
 
-#Container-4 h1{
+#Container-5 h1{
     padding-top:20px;
     padding-bottom: 15px;
     font-size: 48px;
@@ -239,7 +279,7 @@ header ul{
     transition: 0.5s all;
 }
 
-#Container-4 button{
+#Container-5 button{
     background-color: transparent;
     border: transparent;
 }
@@ -291,5 +331,3 @@ footer a{
     align-items: center;
     font-size: 24px;
 }
-
-
